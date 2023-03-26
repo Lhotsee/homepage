@@ -12,8 +12,9 @@
 }
 
 .section__button {
-    background-color: #3f2db375;
+    background-color: #33339134;
     border: none;
+    border-radius: 20px;
     font-size: 15px;
     padding: 15px;
     font-family: "Lato", sans-serif;
