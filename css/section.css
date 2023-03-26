@@ -1,0 +1,25 @@
+.section__header {
+    background-color: #c9c4e2a4;
+    text-shadow: 1px 2px 5px #25252760;
+    background-color: #2b1a8160;
+    text-align: center;
+}
+
+.section__subHeader {
+    color: #032636;
+    background-color: #33339134;
+    text-align: left;
+}
+
+.section__button {
+    background-color: #3f2db375;
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    font-family: "Lato", sans-serif;
+}
+
+.section__image {
+    display: block;
+    margin: 0 auto;
+}

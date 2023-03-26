@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magda Ciszewska</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/link.css" />
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="body">
+    <header>
+      <h1 class="section__header">Magda Ciszewska</h1>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__listItem">
+            <a class="navigation__link" href="#informacje-ogolne"
+              >Informacje ogólne</a
+            >
+          </li>
+          <li class="navigation__listItem">
+            <a class="navigation__link" href="#zainteresowania"
+              >Zainteresowania</a
+            >
+          </li>
+          <li class="navigation__listItem">
+            <a class="navigation__link navigation__link--table" href="#tabela"
+              >Tabela</a
+            >
+          </li>
+          <li class="navigation__listItem">
+            <a class="navigation__link" href="#prywatka">Prywatka</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="section__subHeader" id="informacje-ogólne">Informacje ogólne</h2>
+        <div>
+          <p>
+            Nazywam się Magda, odkąd pojawiłam się na planecie Ziemia minęło 32
+            lata. Wylądowałam w Strzelinie. To niewielkie miasteczko położone
+            nieopodal Wrocławia. Moja rodzina pochodzi z odległej galaktyki
+            zwanej
+            <strong>Gucziluiwiton</strong>, a przybyliśmy tu w ramach
+            <strong>międzygalaktycznego eksperymentu</strong>. Ziemia nie jest
+            przyjazną planetą, ale mamy tu <em>zadanie do wykonania</em>.
+          </p>
+          <img src="images/kosmos.gif" alt="Kosmos" width="300" class="section__image" />
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section__subHeader" id="zainteresowania">Zainteresowania</h2>
+        <div>
+          <p>
+            Nie samą pracą człowiek żyje, więc od czasu do czasu oddaję się
+            zwykłym ziemskim rozrywkom. Moim ulubionym zajęciem (poza
+            obserwowaniem ludzi) jest oglądanie filmów i seriali, głównie z
+            gatunku
+            <b>thriller/kryminał</b>. Poza miło spędzonym czasem, mogę
+            dowiedzieć się więcej na temat ludzkich umysłów. Jednym z ostatnich
+            oglądanych przeze mnie seriali był <i>Dahmer</i> na platformie
+            <i>Netflix</i>. Jeśli chodzi o filmy to poza w/w gatunkami chętnie
+            sięgam również po filmy katastroficzne. Mój ulubiony film to
+            <a
+              class="link__linkText"
+              href="https://www.filmweb.pl/film/Everest-2015-695659"
+              >Everest</a
+            >. Na planecie Gucziluiwiton niestety nie mamy takich ładnych
+            pagórków jak Himalaje. Jeśli chodzi o filmy scince fiction to
+            przyznam, że są średnie. Ludzie w ogóle nie znają się na naszym
+            życiu, co wcale nie dziwi, skoro nigdy nas nie odwiedzili. W wolnym
+            czasie czytam również książki, psychologiczne z racji projektu, nad
+            którym pracuje oraz ulubione thrillery.
+          </p>
+          <div class="table__containerTable">
+            <table class="table" id="tabela">
+              <caption class="table__caption">
+                Ulubione seriale
+              </caption>
+              <thead>
+                <tr class="table__tableRow">
+                  <th class="table__tableHeader" scope="col">
+                    Serial
+                  </th>
+                  <th class="table__tableHeader" scope="col">
+                    Gatunek
+                  </th>
+                  <th class="table__tableHeader" scope="col">
+                    Gdzie obejrzeć?
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__tableRow">
+                  <th class="table__tableHeader" scope="row">
+                    Dahmer
+                  </th>
+                  <td class="table__tableCell">Kryminał, Dramat</td>
+                  <td class="table__tableCell">Netflix</td>
+                </tr>
+                <tr class="table__tableRow">
+                  <th class="table__tableHeader" scope="row">
+                    The Devil's Hour
+                  </th>
+                  <td class="table__tableCell">Thriller</td>
+                  <td class="table__tableCell">Prime Video</td>
+                </tr>
+                <tr class="table__tableRow">
+                  <th class="table__tableHeader" scope="row">
+                    Lucifer
+                  </th>
+                  <td class="table__tableCell">Kryminał, Fantasy</td>
+                  <td rowspan="3" class="table__tableCell">Netflix</td>
+                </tr>
+                <tr class="table__tableRow">
+                  <th class="table__tableHeader" scope="row">
+                    You
+                  </th>
+                  <td class="table__tableCell">Thriller</td>
+                </tr>
+                <tr class="table__tableRow">
+                  <th class="table__tableHeader" scope="row">
+                    Breaking Bad
+                  </th>
+                  <td class="table__tableCell">Dramat, Kryminał</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section__subHeader" id="prywatka">Prywatka</h2>
+        <div>
+          <p>
+            Mam córeczkę Maję, która przyleciała na Ziemię prawie 9 lat temu.
+            Aktualnie uczęszcza do drugiej klasy szkoły podstawowej. Na codzień
+            zajmuje się obserwacją innych dzieci oraz sporządza odpowiednie
+            raporty. W wolnym czasie gra w gry na smartfonie. Jej ulubione to
+            <b>Roblox</b> oraz <b>pkXD</b>.
+            <br />
+            Mój partner Karol zajmuje się z kolei tropieniem innych przybyszy z
+            kosmosu, którzy mogliby zagrozić naszej misji.
+          </p>
+
+          <img
+            src="images/20210723_195132.jpg"
+            alt="Maja na wycieczce"
+            width="300"
+            class="section__image"
+          />
+          <p>
+            <button class="section__button js-sectionButton">
+              <span class="js-themeName">Włącz</span> jasny motyw
+            </button>
+          </p>
+        </div>
+        <p>
+          Mam córeczkę Maję, która przyleciała na Ziemię prawie 9 lat temu.
+          Aktualnie uczęszcza do drugiej klasy szkoły podstawowej. Na codzień
+          zajmuje się obserwacją innych dzieci oraz sporządza odpowiednie
+          raporty. W wolnym czasie gra w gry na smartfonie. Jej ulubione to
+          <b>Roblox</b> oraz <b>pkXD</b>.
+          <br />
+          Mój partner Karol zajmuje się z kolei tropieniem innych przybyszy z
+          kosmosu, którzy mogliby zagrozić naszej misji.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© Copyright by Magda Ciszewska - wszystkie prawa zastrzeżone</p>
+      <a href="mailto:magdaciszewska@outlook.com">magdaciszewska@outlook.com</a>
+    </footer>
+  </body>
+</html>

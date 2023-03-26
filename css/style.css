@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: #5e70e539; 
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 900px;
+    font-style:"Lato", sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #000102; 
+}
+
+.white {
+    background-color: white;
+}

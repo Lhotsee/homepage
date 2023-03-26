@@ -1,0 +1,27 @@
+.navigation {
+    border: 1px solid rgb(13, 13, 116);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.navigation__list {
+    padding: 0 15px;
+    list-style-type: none;
+}
+
+.navigation__listItem {
+    margin: 10px 0;
+}
+
+.navigation__link {
+    text-decoration: none;
+    background-color: #bdc5ce;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.203);
+    border-radius: 20px;
+}
+
+.navigation__link--table {
+    color: rgb(37, 6, 141);
+}

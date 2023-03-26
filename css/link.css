@@ -1,0 +1,19 @@
+.link:hover {
+    background-color: #929297fe;
+    border-bottom: 2px double;
+    outline: none;
+}
+
+.link__linkText {
+    text-decoration: none;
+    background-color: #bdc5ce;
+    color: rgb(0, 0, 0);
+    padding: 2px 2px;
+    
+}
+
+.link__linkText:hover {
+    background-color: #929297fe;
+    border-bottom: 1px inset;
+    outline: none;
+}

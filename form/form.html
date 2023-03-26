@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <p>Pola wymagane oznaczone są *.</p>
+      <form action="https://postman-echo.com/post" method="post" class="form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Dane osobowe</legend>
+          <p>
+            <label>
+              <span class="form__labelText form__field:required">Imię*:</span>
+              <input class="form__field" name="firstName" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText form__field:required" >Nazwisko*:</span>
+              <input class="form__field" name="lastName" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText">Data urodzenia:</span>
+              <input class="form__field"
+                type="date"
+                name="date"
+                min="1900-01-01"
+                max="2005-01-01"
+              />
+            </label>
+            <p>
+              <label>
+                <span class="form__labelText">Kilka słów o Tobie: </span
+                ><textarea class="form__field form__field--textarea" name="description"></textarea> 
+              </label>
+            </p>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Dane kontaktowe</legend>
+          <p>
+            <label>
+              <span class="form__labelText">Numer telefonu: </span
+              ><input class="form__field" type="tel" name="tel" max="999999999" pattern="[09]{9}" />
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText">e-mail:</span>
+              <input class="form__field" type="email" name="email" />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Dodatkowe Informacje</legend>
+          <p>
+            <label>
+              <span class="form__labelText"
+                >Samochód jakiej marki posiadasz?</span
+              >
+              <input class="form__field" name="carBrands" list="carBrands" />
+              <datalist id="carBrands">
+                <option>Volvo</option>
+                <option>Mercedes</option>
+                <option>BMW</option>
+                <option>Opel</option>
+                <option>Ford</option>
+                <option>Audi</option>
+                <option>Kia</option>
+              </datalist>
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText">Miesięczne wynagrodzenie: </span>
+              <input class="form__field" type="number" name="salary" />
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText"
+                >Ulubiony wokalista/wokalistka:</span
+              >
+              <select name="favouriteSinger">
+                <option value="justin">Justin Timberlake</option>
+                <option value="sam">Sam Smith</option>
+                <option value="madonna">Madonna</option>
+                <option value="sia">Sia</option>
+                <option value="selena">Selena Gomez</option>
+                <option value="britney">Britney Spears</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText">Załącz swoje zdjęcie/a: </span>
+              <input class="form__field"
+                type="file"
+                name="photo"
+                multiple
+                enctype="multipart/form-data"
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="form__labelText">Hasło* (conajmmiej 7 znaków):</span>
+              <input class="form__field" type="password" name="password" minlength="7" required />
+            </label>
+          </p>
+        </fieldset>
+
+        <button class="form__button">Wyślij</button>
+      </form>
+    </div>
+  </body>
+</html>
