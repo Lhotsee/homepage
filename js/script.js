@@ -1,4 +1,4 @@
-console.log("Witajcie Ziemianie!");
+console.log("Witajcie Ziemianie! Kisski");
 
 let button = document.querySelector(".js-sectionButton");
 
