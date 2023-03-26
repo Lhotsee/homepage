@@ -1,4 +1,4 @@
-# Magda Ciszewska - moja strona
+# Magda Ciszewska - my homepage
 
 ## Demo
 
