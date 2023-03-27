@@ -9,6 +9,8 @@
     color: #032636;
     background-color: #33339134;
     text-align: left;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .section__button {
@@ -23,4 +25,5 @@
 .section__image {
     display: block;
     margin: 0 auto;
+    padding: 20px;
 }
