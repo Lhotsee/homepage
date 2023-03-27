@@ -26,4 +26,16 @@
     display: block;
     margin: 0 auto;
     padding: 20px;
+    object-fit: contain;
+}
+
+.section__element {
+    background-image: url("../images/background-image.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 50px;
 }

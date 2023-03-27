@@ -2,6 +2,11 @@
     border: thick double #bdc5ce;
     border-radius: 20px;
     text-align: center;
+    background-image: url("../images/background-image.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
 }
 
 .navigation__list {
@@ -23,5 +28,5 @@
 }
 
 .navigation__link--table {
-    color: rgb(37, 6, 141);
+    color: #27276e;
 }
