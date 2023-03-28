@@ -2,6 +2,6 @@
 
 ## This is a page about me but not exactly :smile:. 
 
-![Animation](../homepage/images/Animation1.gif)
+![Animation](https://github.com/Lhotsee/homepage/blob/main/images/Animation1.gif?raw=true)
 
 https://lhotsee.github.io/homepage/
