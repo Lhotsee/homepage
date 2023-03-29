@@ -1,17 +1,26 @@
-console.log("Witajcie Ziemianie! Kisski");
+{
+  const welcome = () => {
+    console.log("Witajcie Ziemianie!");
+  };
 
-let button = document.querySelector(".js-sectionButton");
+  const onChangeBackgroundClick = () => {
+    const body = document.querySelector(".body");
+    const themeName = document.querySelector(".js-themeName");
 
-let themeName = document.querySelector(".js-themeName");
+    body.classList.toggle("white");
+    if (body.classList.contains("white")) {
+      themeName.innerText = "Wyłącz";
+    } else {
+      themeName.innerText = "Włącz";
+    }
+  };
 
-let body = document.querySelector(".body");
-  
-button.addEventListener("click", () => {
-  body.classList.toggle("white");
-  if (body.classList.contains("white")) {
-  themeName.innerText = "Wyłącz";
-} else {
-  themeName.innerText = "Włącz";
-};
-});
+  const init = () => {
+    const button = document.querySelector(".js-sectionButton");
+    button.addEventListener("click", onChangeBackgroundClick);
 
+    welcome();
+  };
+
+  init();
+}
