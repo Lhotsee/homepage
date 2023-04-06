@@ -20,12 +20,16 @@
 
 .navigation__link {
     text-decoration: none;
-    background-color:  #5eb3e51c;
+    background-color:  hsla(202, 72%, 50%, 0.11);
     color: rgb(0, 0, 0);
     padding: 5px 10px;
     border: 2px solid rgba(0, 0, 0, 0.203);
     border-radius: 20px;
     margin: 10px;
+}
+
+.navigation__link:hover {
+    background-color: hsla(202, 72%, 100%, 0.11);
 }
 
 .navigation__link--table {
