@@ -8,11 +8,8 @@
     const themeName = document.querySelector(".js-themeName");
 
     body.classList.toggle("white");
-    if (body.classList.contains("white")) {
-      themeName.innerText = "Wyłącz";
-    } else {
-      themeName.innerText = "Włącz";
-    }
+
+    themeName.innerText = body.classList.contains("white") ? "Wyłącz" : "Włącz";
   };
 
   const init = () => {
