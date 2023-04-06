@@ -15,12 +15,18 @@
 }
 
 .section__button {
-    background-color: #33339134;
+    background-color: hsla(240, 48%, 38%, 0.204);
     border: none;
     border-radius: 20px;
     font-size: 15px;
     padding: 15px;
     font-family: "Lato", sans-serif;
+    transition: 1s;
+}
+
+.section__button:hover {
+    background-color: hsla(240, 48%, 50%, 0.204);
+    transform: scale(1.1);
 }
 
 .section__image {
@@ -28,6 +34,11 @@
     margin: 0 auto;
     padding: 20px;
     object-fit: contain;
+    transition: 1s;
+}
+
+.section__image:hover {
+    transform: scale(1.1);
 }
 
 .section__element {
